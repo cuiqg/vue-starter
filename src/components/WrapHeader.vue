@@ -1,0 +1,23 @@
+<template>
+  <nav class="w-full py-10">
+    <ul class="m-0 flex flex-row list-none justify-center gap-6 p-0">
+      <li class="children:(flex items-center justify-center gap-x-2 rounded-full bg-neutral-950 px-4 py-2 text-sm font-semibold tracking-1 text-white transition hover:bg-neutral-800)">
+        <RouterLink :to="{ name: 'HomePage' }">
+          <ri:home-line />
+          <span>
+            首页
+          </span>
+        </RouterLink>
+      </li>
+
+      <li class="children:(flex items-center justify-center gap-x-2 rounded-full bg-neutral-950 px-4 py-2 text-sm font-semibold tracking-1 text-white transition hover:bg-neutral-800)">
+        <RouterLink :to="{ name: 'UserPage' }">
+          <ri:user-line />
+          <span>
+            用户
+          </span>
+        </RouterLink>
+      </li>
+    </ul>
+  </nav>
+</template>
