@@ -18,7 +18,7 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 export default defineConfig({
   resolve: {
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      '@/': `${path.resolve(__dirname, 'src')}/`,
     },
   },
   css: {
@@ -88,5 +88,5 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     UnoCSS(),
-  ]
+  ],
 })
