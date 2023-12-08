@@ -5,6 +5,8 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
+import extractorArbitrary from '@unocss/extractor-arbitrary-variants'
+
 export default defineConfig({
   presets: [
     presetUno(),
@@ -16,6 +18,9 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
     transformerVariantGroup(),
+  ],
+  extractors: [
+    extractorArbitrary(),
   ],
   shortcuts: {
   },
