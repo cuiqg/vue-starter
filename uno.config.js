@@ -5,12 +5,9 @@ import {
   transformerVariantGroup,
 } from 'unocss'
 
-import presetRemToPx from '@unocss/preset-rem-to-px'
-
 export default defineConfig({
   presets: [
     presetUno(),
-    presetRemToPx(),
   ],
   theme: {
     fontFamily: {
@@ -21,5 +18,5 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   shortcuts: {
-   },
+  },
 })

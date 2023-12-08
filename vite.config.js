@@ -48,12 +48,6 @@ export default defineConfig({
         VueRouterAutoImports,
         {
           'vue-router/auto': ['useLink'],
-          'axios': [
-            ['default', 'axios'],
-          ],
-          'dayjs': [
-            ['default', 'dayjs'],
-          ],
         },
       ],
       resolvers: [
@@ -72,9 +66,6 @@ export default defineConfig({
     Components({
       resolvers: [
         IconResolver({
-          prefix: false,
-          enabledCollections: ['ri'],
-          alias: {},
         }),
       ],
       dts: false,
