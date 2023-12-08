@@ -58,7 +58,7 @@ export default defineConfig({
         'src/stores',
       ],
       eslintrc: {
-        enabled: true,
+        enabled: false,
       },
     }),
 
@@ -66,6 +66,8 @@ export default defineConfig({
     Components({
       resolvers: [
         IconResolver({
+          prefix: false,
+          enabledCollections: [],
         }),
       ],
       dts: false,
@@ -74,7 +76,6 @@ export default defineConfig({
     // https://github.com/unplugin/unplugin-icons
     Icons({
       compiler: 'vue3',
-      autoInstall: true,
     }),
 
     // https://github.com/antfu/unocss
