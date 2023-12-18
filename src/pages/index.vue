@@ -6,7 +6,7 @@ defineOptions({
 
 <template>
   <div class="text-center">
-    Home
+    <ri:home-line />
   </div>
 </template>
 

@@ -67,7 +67,6 @@ export default defineConfig({
       resolvers: [
         IconResolver({
           prefix: false,
-          enabledCollections: [],
         }),
       ],
       dts: false,
@@ -76,6 +75,7 @@ export default defineConfig({
     // https://github.com/unplugin/unplugin-icons
     Icons({
       compiler: 'vue3',
+      autoInstall: true,
     }),
 
     // https://github.com/antfu/unocss
