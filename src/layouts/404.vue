@@ -1,5 +1,6 @@
 <script setup>
 const router = useRouter()
+const { t } = useI18n()
 </script>
 
 <template>
@@ -11,7 +12,7 @@ const router = useRouter()
         @click="router.back()"
       >
         <ri:home-3-line />
-        返回首页
+        {{ t('not-found') }}
       </button>
     </div>
   </main>

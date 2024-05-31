@@ -1,5 +1,4 @@
 import path from 'node:path'
-
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -7,6 +6,7 @@ import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import VueRouter from 'unplugin-vue-router/vite'
+import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
@@ -43,6 +43,7 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
+        'vue-i18n',
         '@vueuse/core',
         unheadVueComposablesImports,
         VueRouterAutoImports,
@@ -52,7 +53,6 @@ export default defineConfig({
       ],
       resolvers: [
       ],
-      vueTemplate: true,
       dts: false,
       dirs: [
         'src/stores',
@@ -60,6 +60,7 @@ export default defineConfig({
       eslintrc: {
         enabled: false,
       },
+      vueTemplate: true,
     }),
 
     // https://github.com/antfu/vite-plugin-components
@@ -76,6 +77,13 @@ export default defineConfig({
     Icons({
       compiler: 'vue3',
       autoInstall: true,
+    }),
+
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      fullInstall: true,
+      include: [path.resolve(__dirname, 'locales/**')],
     }),
 
     // https://github.com/antfu/unocss
