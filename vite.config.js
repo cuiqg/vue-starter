@@ -18,8 +18,8 @@ import { unheadVueComposablesImports } from '@unhead/vue'
 export default defineConfig({
   resolve: {
     alias: {
-      '@/': `${path.resolve(__dirname, 'src')}/`,
-    },
+      '@/': `${path.resolve(__dirname, 'src')}/`
+    }
   },
   css: {
   },
@@ -27,13 +27,13 @@ export default defineConfig({
     // https://github.com/vue-macros/vue-macros
     VueMacros({
       plugins: {
-        vue: Vue(),
-      },
+        vue: Vue()
+      }
     }),
 
     // https://github.com/posva/unplugin-vue-router
     VueRouter({
-      dts: false,
+      dts: false
     }),
 
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
@@ -48,45 +48,45 @@ export default defineConfig({
         unheadVueComposablesImports,
         VueRouterAutoImports,
         {
-          'vue-router/auto': ['useLink'],
-        },
+          'vue-router/auto': ['useLink']
+        }
       ],
       resolvers: [
       ],
       dts: false,
       dirs: [
-        'src/stores',
+        'src/stores'
       ],
       eslintrc: {
-        enabled: true,
+        enabled: true
       },
-      vueTemplate: true,
+      vueTemplate: true
     }),
 
     // https://github.com/antfu/vite-plugin-components
     Components({
       resolvers: [
         IconResolver({
-          prefix: false,
-        }),
+          prefix: false
+        })
       ],
-      dts: false,
+      dts: false
     }),
 
     // https://github.com/unplugin/unplugin-icons
     Icons({
       compiler: 'vue3',
-      autoInstall: true,
+      autoInstall: true
     }),
 
     VueI18n({
       runtimeOnly: true,
       compositionOnly: true,
       fullInstall: true,
-      include: [path.resolve(__dirname, 'locales/**')],
+      include: [path.resolve(__dirname, 'locales/**')]
     }),
 
     // https://github.com/antfu/unocss
-    UnoCSS(),
-  ],
+    UnoCSS()
+  ]
 })
