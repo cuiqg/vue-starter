@@ -58,7 +58,7 @@ export default defineConfig({
         'src/stores',
       ],
       eslintrc: {
-        enabled: false,
+        enabled: true,
       },
       vueTemplate: true,
     }),
