@@ -8,11 +8,11 @@ useHead({
     {
       rel: 'shortcut icon',
       type: 'image/x-icon',
-      href: '/favicon.ico',
-    },
+      href: '/favicon.ico'
+    }
   ],
   meta: [
-  ],
+  ]
 })
 </script>
 
