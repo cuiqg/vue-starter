@@ -7,6 +7,7 @@ import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
+import VueDevTools from 'vite-plugin-vue-devtools'
 
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
@@ -87,6 +88,7 @@ export default defineConfig({
     }),
 
     // https://github.com/antfu/unocss
-    UnoCSS()
+    UnoCSS(),
+    VueDevTools()
   ]
 })
