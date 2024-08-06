@@ -1,6 +1,6 @@
 <script setup>
 defineOptions({
-  name: 'NotFoundPage',
+  name: 'NotFoundPage'
 })
 </script>
 

@@ -1,12 +1,13 @@
 <script setup>
 defineOptions({
-  name: 'HomePage',
+  name: 'HomePage'
 })
+const { t } = useI18n()
 </script>
 
 <template>
-  <div class="text-center">
-    <ri:home-line />
+  <div class="w-full flex flex-col items-center justify-center p-6 text-center">
+    <ri:home-line /> {{ t('home') }}
   </div>
 </template>
 

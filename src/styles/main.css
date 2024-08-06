@@ -1,12 +1,13 @@
+body {
+  @apply h-screen w-screen;
+}
 #app {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
+  @apply w-full h-full;
 }
 
 
 #nprogress {
-  pointer-events: none;
+  @apply pointer-events-none;
 }
 
 #nprogress .bar {

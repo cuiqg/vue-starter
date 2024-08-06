@@ -8,6 +8,7 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import VueDevTools from 'vite-plugin-vue-devtools'
+import WebfontDownload from 'vite-plugin-webfont-dl'
 
 import UnoCSS from 'unocss/vite'
 import Icons from 'unplugin-icons/vite'
@@ -90,6 +91,11 @@ export default defineConfig({
 
     // https://github.com/antfu/unocss
     UnoCSS(),
+
+    // https://github.com/feat-agency/vite-plugin-webfont-dl
+    WebfontDownload(),
+
+    // https://github.com/webfansplz/vite-plugin-vue-devtools
     VueDevTools()
   ]
 })

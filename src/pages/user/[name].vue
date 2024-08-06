@@ -1,20 +1,19 @@
 <script setup>
 defineOptions({
-  name: 'UserDetailPage',
+  name: 'UserDetailPage'
 })
 const route = useRoute()
 const userStore = useUserStore()
+const { t } = useI18n()
 
 watchEffect(() => {
   userStore.setNewUser(route.params.name)
-
-  console.log(userStore.currentUser)
 })
 </script>
 
 <template>
   <div class="text-center">
-    {{ userStore.currentUser }}
+    {{ t('user.hi', { name: userStore.currentUser }) }}
   </div>
 </template>
 
