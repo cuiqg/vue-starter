@@ -1,7 +1,6 @@
 .DS_Store
 *.local
 dist
-node_modules
+node_modules/
 .idea/
 .eslintrc-auto-import.json
-package-lock.json
