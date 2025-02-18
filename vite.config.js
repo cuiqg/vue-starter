@@ -1,18 +1,21 @@
 import path from 'node:path'
-import { defineConfig } from 'vite'
+
+import { unheadVueComposablesImports } from '@unhead/vue'
+
 import Vue from '@vitejs/plugin-vue'
-import Layouts from 'vite-plugin-vue-layouts'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import VueMacros from 'unplugin-vue-macros/vite'
-import VueRouter from 'unplugin-vue-router/vite'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 
 import UnoCSS from 'unocss/vite'
-import Icons from 'unplugin-icons/vite'
+import AutoImport from 'unplugin-auto-import/vite'
 import IconResolver from 'unplugin-icons/resolver'
+import Icons from 'unplugin-icons/vite'
+import Components from 'unplugin-vue-components/vite'
+import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import { unheadVueComposablesImports } from '@unhead/vue'
+import VueRouter from 'unplugin-vue-router/vite'
+import { defineConfig } from 'vite'
+
+import VueDevTools from 'vite-plugin-vue-devtools'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -36,6 +39,7 @@ export default defineConfig({
       dts: false
     }),
 
+    VueDevTools(),
     // https://github.com/JohnCampionJr/vite-plugin-vue-layouts
     Layouts(),
 
@@ -43,7 +47,6 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-i18n',
         '@vueuse/core',
         unheadVueComposablesImports,
         VueRouterAutoImports,
@@ -78,13 +81,6 @@ export default defineConfig({
     Icons({
       compiler: 'vue3',
       autoInstall: true
-    }),
-
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      fullInstall: true,
-      include: [path.resolve(__dirname, 'locales/**')]
     }),
 
     // https://github.com/antfu/unocss
