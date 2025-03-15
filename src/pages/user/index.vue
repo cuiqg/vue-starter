@@ -1,8 +1,4 @@
 <script setup>
-defineOptions({
-  name: 'UserPage'
-})
-
 const router = useRouter()
 const value = ref('')
 </script>

@@ -2,11 +2,13 @@
 defineOptions({
   name: 'NotFoundPage'
 })
+
+const { t } = useI18n()
 </script>
 
 <template>
   <div>
-    Not Found
+    {{ t('not-found') }}
   </div>
 </template>
 

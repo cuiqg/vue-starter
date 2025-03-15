@@ -1,7 +1,7 @@
 import { createPinia } from 'pinia'
 import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 
-export const install = (app) => {
+export const install = (app, { router }) => {
   const pinia = createPinia()
   pinia.use(piniaPluginPersistedstate)
 

@@ -1,9 +1,3 @@
-<script setup>
-defineOptions({
-  name: 'HomePage'
-})
-</script>
-
 <template>
   <div class="w-full flex flex-col items-center justify-center p-6 text-center">
     <ri:home-line /> Home
