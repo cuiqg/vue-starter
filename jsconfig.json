@@ -9,6 +9,5 @@
     "plugins": [
       "unplugin-vue-macros/volar"
     ]
-  },
-  "exclude": ["dist", "node_modules"]
+  }
 }

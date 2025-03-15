@@ -1,6 +1,5 @@
-body {
-  @apply h-screen w-screen;
-}
+html,
+body,
 #app {
   @apply w-full h-full;
 }

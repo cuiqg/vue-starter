@@ -1,0 +1,7 @@
+menu:
+  home: 首页
+  user: 用户
+user:
+  hi: 你好, {name}!
+  whats-your-name: 你的名字?
+not-found: 无法找到

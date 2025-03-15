@@ -1,4 +1,6 @@
-home: Home
+menu:
+  home: Home
+  user: User
 user:
   hi: Hi, {name}!
   whats-your-name: What's your name?

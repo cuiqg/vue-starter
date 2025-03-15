@@ -5,7 +5,7 @@
         <RouterLink :to="{ name: 'HomePage' }">
           <ri:home-line />
           <span>
-            首页
+            {{ $t('menu.home') }}
           </span>
         </RouterLink>
       </li>
@@ -14,7 +14,7 @@
         <RouterLink :to="{ name: 'UserPage' }">
           <ri:user-line />
           <span>
-            用户
+            {{ $t('menu.user') }}
           </span>
         </RouterLink>
       </li>

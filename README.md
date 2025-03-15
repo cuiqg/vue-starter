@@ -1,7 +1,7 @@
 # Vue 3 + Vite + UnoCSS
 
+#### 使用 ✨ giget 安装
+
 ```bash
-npx degit cuiqg/vue-starter my-vue-app
-cd my-vue-app
-npm i
+npx giget@latest gh:cuiqg/vue-starter myVueProject --install
 ```
