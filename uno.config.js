@@ -1,7 +1,7 @@
 import {
   defineConfig,
-  presetUno,
   presetTypography,
+  presetUno,
   presetWebFonts,
   transformerDirectives,
   transformerVariantGroup

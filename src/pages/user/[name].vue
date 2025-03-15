@@ -4,7 +4,6 @@ defineOptions({
 })
 const route = useRoute()
 const userStore = useUserStore()
-const { t } = useI18n()
 
 watchEffect(() => {
   userStore.setNewUser(route.params.name)
@@ -13,7 +12,7 @@ watchEffect(() => {
 
 <template>
   <div class="text-center">
-    {{ t('user.hi', { name: userStore.currentUser }) }}
+    {{ userStore.currentUser }}
   </div>
 </template>
 

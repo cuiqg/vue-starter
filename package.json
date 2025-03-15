@@ -6,7 +6,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
-    "lint:inspector": "npx @eslint/config-inspector",
+    "lint:inspect": "eslint --inspect-config",
     "postinstall": "npx simple-git-hooks"
   },
   "dependencies": {

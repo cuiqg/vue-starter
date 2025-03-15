@@ -7,7 +7,6 @@ import AutoImport from 'unplugin-auto-import/vite'
 import IconResolver from 'unplugin-icons/resolver'
 import Icons from 'unplugin-icons/vite'
 import Components from 'unplugin-vue-components/vite'
-
 import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
@@ -43,7 +42,6 @@ export default defineConfig({
     AutoImport({
       imports: [
         'vue',
-        'vue-i18n',
         '@vueuse/core',
         unheadVueComposablesImports,
         VueRouterAutoImports

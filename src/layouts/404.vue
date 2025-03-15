@@ -1,6 +1,5 @@
 <script setup>
 const router = useRouter()
-const { t } = useI18n()
 </script>
 
 <template>
@@ -12,7 +11,7 @@ const { t } = useI18n()
         @click="router.back()"
       >
         <ri:home-3-line />
-        {{ t('not-found') }}
+        not-found
       </button>
     </div>
   </main>
