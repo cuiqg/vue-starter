@@ -1,5 +1,4 @@
 import path from 'node:path'
-import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
@@ -11,7 +10,9 @@ import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
 import { defineConfig } from 'vite'
-import Layouts from 'vite-plugin-vue-layouts-next'
+import Inspect from 'vite-plugin-inspect'
+import VueDevTools from 'vite-plugin-vue-devtools'
+import Layouts from 'vite-plugin-vue-layouts'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -63,9 +64,7 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       resolvers: [
-        IconResolver({
-          prefix: false
-        })
+        IconResolver()
       ],
       dts: false
     }),
@@ -76,14 +75,9 @@ export default defineConfig({
       autoInstall: true
     }),
 
-    VueI18n({
-      runtimeOnly: true,
-      compositionOnly: true,
-      fullInstall: true,
-      include: [path.resolve(__dirname, './src/locales/**')]
-    }),
-
     // https://github.com/antfu/unocss
-    UnoCSS()
+    UnoCSS(),
+    VueDevTools(),
+    Inspect()
   ]
 })

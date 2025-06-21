@@ -1,7 +1,0 @@
-menu:
-  home: Home
-  user: User
-user:
-  hi: Hi, {name}!
-  whats-your-name: What's your name?
-not-found: Not found

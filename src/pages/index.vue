@@ -1,6 +1,6 @@
 <template>
   <div class="w-full flex flex-col items-center justify-center p-6 text-center">
-    <ri:home-line /> Home
+    <i-ri:home-line /> Home
   </div>
 </template>
 

@@ -1,15 +1,15 @@
 import {
   defineConfig,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind3,
   transformerDirectives,
   transformerVariantGroup
 } from 'unocss'
 
 export default defineConfig({
   presets: [
-    presetUno(),
+    presetWind3(),
     presetTypography(),
     presetWebFonts()
   ],
@@ -20,7 +20,5 @@ export default defineConfig({
   transformers: [
     transformerDirectives(),
     transformerVariantGroup()
-  ],
-  shortcuts: {
-  }
+  ]
 })

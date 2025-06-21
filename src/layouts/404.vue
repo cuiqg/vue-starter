@@ -12,7 +12,7 @@ const { t } = useI18n()
         class=""
         @click="router.back()"
       >
-        <ri:home-3-line />
+        <i-ri:home-3-line />
         <span>
           {{ t('not-found') }}
         </span>
