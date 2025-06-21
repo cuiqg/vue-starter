@@ -3,5 +3,5 @@
 #### 使用 ✨ giget 安装
 
 ```bash
-npx degit github:cuiqg/vue-starter myVueProject --install
+npx giget@latest github:cuiqg/vue-starter myVueProject --install
 ```
