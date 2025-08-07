@@ -1,7 +1,5 @@
 <script setup>
 const router = useRouter()
-
-const { t } = useI18n()
 </script>
 
 <template>
@@ -14,7 +12,7 @@ const { t } = useI18n()
       >
         <i-ri:home-3-line />
         <span>
-          {{ t('not-found') }}
+          {{ $t('not-found') }}
         </span>
       </button>
     </div>

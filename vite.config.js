@@ -1,4 +1,5 @@
 import path from 'node:path'
+import { defineConfig } from 'vite'
 import { unheadVueComposablesImports } from '@unhead/vue'
 import Vue from '@vitejs/plugin-vue'
 import UnoCSS from 'unocss/vite'
@@ -9,7 +10,6 @@ import Components from 'unplugin-vue-components/vite'
 import VueMacros from 'unplugin-vue-macros/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
 import VueRouter from 'unplugin-vue-router/vite'
-import { defineConfig } from 'vite'
 import Inspect from 'vite-plugin-inspect'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-layouts'
@@ -55,8 +55,7 @@ export default defineConfig({
         'src/stores'
       ],
       eslintrc: {
-        enabled: true,
-        globalsPropValue: 'readonly'
+        enabled: true
       },
       vueTemplate: true
     }),
@@ -64,7 +63,9 @@ export default defineConfig({
     // https://github.com/antfu/vite-plugin-components
     Components({
       resolvers: [
-        IconResolver()
+        IconResolver({
+          enabledCollections: ['mingcute']
+        })
       ],
       dts: false
     }),

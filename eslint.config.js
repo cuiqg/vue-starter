@@ -1,3 +1,3 @@
 import cuiqg from '@cuiqg/eslint-config'
 
-export default cuiqg()
+export default cuiqg({})
