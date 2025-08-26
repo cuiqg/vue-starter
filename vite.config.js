@@ -13,6 +13,7 @@ import VueRouter from 'unplugin-vue-router/vite'
 import Inspect from 'vite-plugin-inspect'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import Layouts from 'vite-plugin-vue-layouts'
+import VueI18n from '@intlify/unplugin-vue-i18n/vite'
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -68,6 +69,13 @@ export default defineConfig({
         })
       ],
       dts: false
+    }),
+
+    VueI18n({
+      runtimeOnly: true,
+      compositionOnly: true,
+      fullInstall: true,
+      include: [path.relative(__dirname, 'src/locales/**')]
     }),
 
     // https://github.com/unplugin/unplugin-icons

@@ -1,15 +1,11 @@
 import { createI18n } from 'vue-i18n'
-import zhCN from '@/locales/zh-CN'
-import en from '@/locales/en'
+import messages from '@intlify/unplugin-vue-i18n/messages'
 
 const i18n = createI18n({
   legacy: false,
   locale: 'zh-CN',
   fallbackLocale: 'en',
-  messages: {
-    en,
-    'zh-CN': zhCN
-  }
+  messages
 })
 
 export const install = (app, { router }) => {
