@@ -1,7 +1,8 @@
 <template>
-  <nav class="w-full px-4 py-6">
+  <nav class="px-4 py-6 w-full">
     <ul
-      class="[&_li_a]:text-md m-0 flex flex-row list-none justify-center gap-x-6 p-0 [&_li_a]:(inline-flex items-center justify-center gap-x-2) [&_li]:(inline-flex items-center justify-center gap-x-2 border border-zinc-950 rounded-full border-solid bg-zinc-950 p-x-4 p-y-1 text-white)">
+      class="[&_li_a]:text-md m-0 p-0 list-none flex flex-row gap-x-6 justify-center [&_li]:(text-white p-x-4 p-y-1 border border-zinc-950 rounded-full border-solid bg-zinc-950 inline-flex gap-x-2 items-center justify-center) [&_li_a]:(inline-flex gap-x-2 items-center justify-center)"
+    >
       <li>
         <RouterLink :to="{ name: 'HomePage' }">
           <i-mingcute:home-1-line class="h-[1em] w-[1em]" />

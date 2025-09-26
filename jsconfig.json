@@ -3,11 +3,25 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"]
-    }
+    },
+    "types": [
+      "unplugin-vue-router/client",
+      "vite-plugin-vue-layouts/client",
+      "vue-macros/macros-global"
+    ]
   },
   "vueCompilerOptions": {
     "plugins": [
-      "unplugin-vue-macros/volar"
+      "vue-macros/volar"
     ]
-  }
+  },
+  "include": [
+    "src/auto-imports.d.ts",
+    "src/components.d.ts",
+    "src/typed-router.d.ts"
+  ],
+  "exclude": [
+    "dist",
+    "node_modules"
+  ]
 }
