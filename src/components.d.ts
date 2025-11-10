@@ -13,6 +13,7 @@ declare module 'vue' {
   export interface GlobalComponents {
     'IMingcute:home1Line': typeof import('~icons/mingcute/home1-line')['default']
     'IMingcute:user1Line': typeof import('~icons/mingcute/user1-line')['default']
+    'IRi:homeLine': typeof import('~icons/ri/home-line')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     WrapHeader: typeof import('./components/WrapHeader.vue')['default']

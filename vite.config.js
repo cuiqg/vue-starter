@@ -69,7 +69,7 @@ export default defineConfig({
     Components({
       resolvers: [
         IconResolver({
-          enabledCollections: ['mingcute']
+          enabledCollections: ['ri']
         })
       ],
       dts: 'src/components.d.ts'
