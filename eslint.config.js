@@ -4,5 +4,8 @@ import { FlatCompat } from '@eslint/eslintrc'
 
 const compat = new FlatCompat()
 
-export default cuiqg({}, fs.existsSync('.eslintrc-auto-import.json') ? compat.extends('./.eslintrc-auto-import.json') : []
+export default cuiqg({},
+  fs.existsSync('.eslintrc-auto-import.json')
+    ? compat.extends('./.eslintrc-auto-import.json')
+    : []
 )
