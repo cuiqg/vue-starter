@@ -1,6 +1,6 @@
 <template>
-  <div class="w-full flex flex-col items-center justify-center p-6 text-center">
-    <i-ri:home-line /> {{ $t("home") }}
+  <div class="p-6 text-center flex flex-col w-full items-center justify-center">
+    <i-mingcute:home-1-line /> {{ $t("home") }}
   </div>
 </template>
 

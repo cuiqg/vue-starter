@@ -1,11 +1,15 @@
 catalog:
+  '@eslint/eslintrc': ^3.3.1
+  '@iconify-json/mingcute': ^1.2.5
+  '@intlify/unplugin-vue-i18n': ^6.0.8
   '@unhead/vue': ^2.0.19
   '@vitejs/plugin-vue': ^6.0.1
   '@vueuse/core': ^14.0.0
-  '@intlify/unplugin-vue-i18n': ^6.0.8
+  eslint: ^9.39.1
   nprogress: ^0.2.0
   pinia: ^3.0.4
   pinia-plugin-persistedstate: ^4.7.1
+  unocss: ^66.5.6
   unplugin-auto-import: ^20.2.0
   unplugin-icons: ^22.5.0
   unplugin-vue-components: ^30.0.0
@@ -15,9 +19,9 @@ catalog:
   vite-plugin-vue-devtools: ^8.0.3
   vite-plugin-vue-layouts: ^0.11.0
   vue: ^3.5.24
+  vue-i18n: ^11.1.12
   vue-macros: ^3.1.1
   vue-router: ^4.6.3
-  vue-i18n: ^11.1.12
 
 onlyBuiltDependencies:
   - esbuild

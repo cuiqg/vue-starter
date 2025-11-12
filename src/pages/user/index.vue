@@ -9,7 +9,7 @@ const value = ref('')
       v-model="value"
       type="text"
       name="name"
-      class="h-[40px] w-full border rounded-full px-4"
+      class="px-4 border rounded-full h-[40px] w-full"
       placeholder="whats-your-name"
       @keydown.enter="router.push({ name: 'UserDetailPage', params: { name: value } })"
     >

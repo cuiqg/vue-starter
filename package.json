@@ -21,12 +21,12 @@
   },
   "devDependencies": {
     "@cuiqg/eslint-config": "^2.5.8",
-    "@eslint/eslintrc": "^3.3.1",
-    "@iconify-json/ri": "^1.2.5",
+    "@eslint/eslintrc": "catalog:",
+    "@iconify-json/mingcute": "catalog:",
     "@intlify/unplugin-vue-i18n": "catalog:",
     "@vitejs/plugin-vue": "catalog:",
-    "eslint": "^9.39.1",
-    "unocss": "^66.5.5",
+    "eslint": "catalog:",
+    "unocss": "catalog:",
     "unplugin-auto-import": "catalog:",
     "unplugin-icons": "catalog:",
     "unplugin-vue-components": "catalog:",
@@ -37,5 +37,5 @@
     "vite-plugin-vue-layouts": "catalog:",
     "vue-macros": "catalog:"
   },
-  "packageManager": "pnpm@10.15.0"
+  "packageManager": "pnpm@10.22.0"
 }
