@@ -20,7 +20,7 @@
     "vue-router": "catalog:"
   },
   "devDependencies": {
-    "@cuiqg/eslint-config": "^2.5.8",
+    "@cuiqg/eslint-config": "^2.8.2",
     "@eslint/eslintrc": "catalog:",
     "@iconify-json/mingcute": "catalog:",
     "@intlify/unplugin-vue-i18n": "catalog:",
@@ -37,5 +37,5 @@
     "vite-plugin-vue-layouts": "catalog:",
     "vue-macros": "catalog:"
   },
-  "packageManager": "pnpm@10.22.0"
+  "packageManager": "pnpm@10.24.0"
 }
