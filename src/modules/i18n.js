@@ -8,6 +8,6 @@ const i18n = createI18n({
   messages
 })
 
-export const install = (app, { _router }) => {
+export const install = (app, { router }) => {
   app.use(i18n)
 }
